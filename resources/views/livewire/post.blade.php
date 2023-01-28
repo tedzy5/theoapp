@@ -28,7 +28,8 @@
                         <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Description</th>
+                            <th>Keywords</th>
+                            <th>Body</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -40,7 +41,10 @@
                                         {{$post->title}}
                                     </td>
                                     <td>
-                                        {{$post->description}}
+                                        {{$post->keywords}}
+                                    </td>
+                                    <td>
+                                        {{$post->body}}
                                     </td>
                                     <td>
                                         <button wire:click="editPost({{$post->id}})" class="btn btn-primary btn-sm">Edit</button>
@@ -50,7 +54,7 @@
                             @endforeach
                         @else
                             <tr>
-                                <td colspan="3" align="center">
+                                <td colspan="4" align="center">
                                     No Posts Found.
                                 </td>
                             </tr>

@@ -9,9 +9,16 @@
                 @enderror
             </div>
             <div class="form-group mb-3">
-                <label for="description">Description:</label>
-                <textarea class="form-control @error('description') is-invalid @enderror" id="description" wire:model="description" placeholder="Enter Description"></textarea>
-                @error('description')
+                <label for="keywords">Keywords:</label>
+                <textarea class="form-control @error('keywords') is-invalid @enderror" id="keywords" wire:model="keywords" placeholder="Enter Keywords"></textarea>
+                @error('keywords')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+            <div class="form-group mb-3">
+                <label for="body">Full Body Text:</label>
+                <textarea class="form-control @error('body') is-invalid @enderror" id="body" wire:model="body" placeholder="Enter Body Text"></textarea>
+                @error('body')
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
