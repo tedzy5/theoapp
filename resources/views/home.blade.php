@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Livewire Crud</title>
-    <link data-minify="1" href="https://www.bacancytechnology.com/blog/wp-content/cache/min/1/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css?ver=1672663261" rel="stylesheet" crossorigin="anonymous">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     @livewireStyles
 </head>
 <body>
